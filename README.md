@@ -287,13 +287,3 @@ ollama pull deepseek-coder
 ### Port conflicts
 
 If `5001` or `5173` is already in use, change the relevant port in your env configuration and restart the servers.
-
-## Why This README Is Developer-Oriented
-
-This project is organized as a small workspace-based monorepo:
-
-- `shared/` keeps algorithm definitions and simulation logic reusable
-- `backend/` exposes simulation and AI endpoints
-- `frontend/` renders the learning experience
-
-That separation makes it easier to add a new algorithm, update the tutor behavior, or swap deployment targets without tightly coupling the entire app.
